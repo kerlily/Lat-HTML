@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <h1>form isian</h1>
+    <form action="/daftar" method="get">
+        
+        <div>
+        <label for="nama">nama anda</label>
+        <input type="text" placeholder="masukan nama anda" id="nama" name="nama">    
+        <button type="button">kirim</button>
+        </div>
+        
+        <div>
+        <br>
+                <label for="email">email anda</label>
+                <input type="email" placeholder="masukan email" id="email" name="email">
+                <p>
+                    
+                    <label for="password">password anda</label>
+                    <input type="password" placeholder="masukan password" id="password" name="password">
+                    
+                </p>
+        </div>
+        
+        <div>
+
+            <label for="tanggal">tanggal anda</label>
+            <input type="date" placeholder="masukan tanggal" id="tanggal" name="tanggal">
+            
+        </div>
+        <br>
+        <div>
+
+            <label for="angka">angka anda</label>
+            <input type="number" placeholder="masukan angka" id="angka" nama="angka">
+        </div>
+        <input type="submit" value="daftar">
+    </form>
+    <hr>
+
+    <h1>formulir isian</h1>
+    <form action="/order">
+        <div>
+            <input type="radio" name="order" id="" value="default" checked>
+            <label for="order">default</label>
+        </div>
+        <div>
+            <input type="radio" name="order" id="" value="makanan">
+            <label for="order">maknan</label>
+        </div>
+        <div>
+            <input type="radio" name="order" id="" value="minuman">
+            <label for="order">minuman</label>
+        </div>
+        <div>
+            <input type="radio" name="order" id="" value="pakaian">
+            <label for="order">pakaian</label>
+        </div>
+        <input type="submit" value="order">    
+    </form>
+
+
+    <hr>
+    <h1>isian 2</h1>
+    <form action="awok">
+        <div>
+            <label for="enak">enaknya</label>
+            <select name="enak" id="ngopo">
+                <option value="tidur">tidur</option>
+                <option value="makan" selected>makan</option>
+                <option value="mabar">mabar</option>
+            </select>
+        </div>
+        <div>
+            <label for="term">sesuai pesanan</label>
+            <input type="checkbox" name="term" id="ngopo">
+        </div>
+        <br>
+        <input type="submit" value="gass" name="gas" id="ngopo">
+        <div>
+            <label for="catatan">cataatan</label> <br>
+            <textarea name="catatan" id="catatan" cols="30" rows="5"></textarea> <br>
+            <input type="submit" value="kirim" name="catatan" id="catatan">
+        </div>
+    </form>
+<hr>
+    <h1>VALIDASI</h1>
+    <form action="/wuda">
+        <p>
+            <INput type="text" required minlength="5" maxlength="10" placeholder="masukan nama anda" name="valid"></INput></p>
+
+        <input type="number" required min="1" max="4" placeholder="masukan angka" name="valid"> <br>
+        <input type="submit" value="kirim" name="valid">
+    </form>
+</body>
+</html>
